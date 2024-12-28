@@ -1,5 +1,5 @@
 '''
-This module defines the behaviour of a client in your Chat Application
+This module defines the behaviour of a client in the Chat Application
 '''
 import sys
 import getopt
@@ -8,12 +8,6 @@ import random
 from threading import Thread
 import os
 import util
-'''
-Write your code inside this class. 
-In the start() function, you will read user-input and act accordingly.
-receive_handler() function is running another thread and you have to listen 
-for incoming messages in this function.
-'''
 
 
 class Client:
@@ -33,8 +27,6 @@ class Client:
     def start(self):
         '''
         Main Loop is here
-        Start by sending the server a JOIN message.
-        Waits for userinput and then process it
         '''
         client_username = self.name #Setting the username to the default name in the constructor
         self.sock.send(client_username.encode("utf-8")) #Sending this username to the server
@@ -120,9 +112,6 @@ class Client:
 # Do not change this part of code
 if __name__ == "__main__":
     def helper():
-        '''
-        This function is just for the sake of our Client module completion
-        '''
         print("Client")
         print("-u username | --user=username The username of Client")
         print("-p PORT | --port=PORT The server port, defaults to 15000")
