@@ -1,4 +1,4 @@
-# Peer-to-Peer File Sharing System with Centralized Index
+# Peer-to-Peer File Sharing System
 
 This repository implements a peer-to-peer file sharing system with a centralized server. The system facilitates reliable messaging, file discovery, and file transfers among connected clients, using a centralized index for client management and communication.
 
@@ -49,9 +49,3 @@ The system consists of:
 
 ---
 
-## Usage
-
-### 1. Running the Server
-Start the server using:
-```bash
-python3 server.py
