@@ -20,22 +20,6 @@ This repository implements a peer-to-peer file sharing system with a centralized
 
 ---
 
-## Architecture
-The system consists of:
-1. **Server**:
-   - Manages client connections.
-   - Maintains an index of active clients and available files.
-   - Facilitates messaging and file transfers between clients.
-
-2. **Client**:
-   - Connects to the server to send messages, upload files, and request files.
-   - Supports user commands for interaction with the system.
-
-3. **Utility Functions**:
-   - Provides helper methods for message formatting, file handling, and data transfer protocols.
-
----
-
 ## Files
 
 ### 1. `server.py`
