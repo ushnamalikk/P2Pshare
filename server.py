@@ -12,7 +12,7 @@ import base64
 MAX_NUM_CLIENTS = 10
 class Server:
     '''
-    This is the main Server Class. You will to write Server code inside this class.
+    This is the main Server Class. 
     '''
     def __init__(self, dest, port):
         self.server_addr = dest
@@ -163,9 +163,6 @@ class Server:
 
 if __name__ == "__main__":
     def helper():
-        '''
-        This function is just for the sake of our module completion
-        '''
         print("Server")
         print("-p PORT | --port=PORT The server port, defaults to 15000")
         print("-a ADDRESS | --address=ADDRESS The server ip or hostname, defaults to localhost")
